@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link{
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 85px;
+    width: 85px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 800px; */
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px #999;
+}
+.video {
+    width: 100%;
+    height: 25vh;
+    background-color: #ccc;
+}
+.status {
+    width: 40%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #999;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #999;
+}
+
+
+
+.data_group{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data_member {
+    width: 45%;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #999;
+}
+
+.data_member.vantoc {
+    width: 95%;
+}
+/* 
+.data_member.vantoc > h2 {
+    font-size: 25px;
+} */
+
+.data_member > h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.data_member > p {
+    font-size: 20px;
+}
+/* .data > div:last-child {
+    margin-bottom: 0;
+} */
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.coll{
+    margin-bottom: 0;
+}
+
+.roww{
+    margin: 0;
+}
+
+#stop2 {
+    margin: 20px 0;
+}
+
+.control{
+    align-items: center;
+    padding: 40px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control_group_2 {
+    
+}
+
+.control_item {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around ;
+}
+
+/* .control_item.row-3.coll {
+    width: calc(100%/3);
+}
+
+.control_item.col-3.coll {
+    height: calc(100%/2);
+} */
+
+.coll-3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+
+}
+
+
+.control-icon {
+    color: rgba(0, 0, 0,0.2);
+}
+
+.control_sd {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #999;
+    padding: 10px;
+}
+
+.coll {
+    font-size: 40px;
+}
+
+button {
+    font-size: 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+/* .xoay-trai{
+    transform: rotate(-45deg);
+}
+
+.xoay-phai{
+    transform: rotate(45deg);
+} */
+
+/* #stop {
+    display: none;
+} */
+
+/* -------------------------------------------------------- */
+
+@media (min-width: 1400px){
+    .video {
+        width: 70%;
+        height: 300px;
+        background-color: #ccc;
+        margin-bottom: 5px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .data_container{
+        min-width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .data{
+        padding: 50px 0;
+    }
+
+    .data_member{
+        width: 48%;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+        padding: 30px;
+        box-shadow: 0px 0px 5px #999;
+    }
+
+    .data_group{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .data_member{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .data_member > h2 {
+        font-size: 40px;
+    }
+    
+    .data_member > p {
+        font-size: 25px;
+    }
+
+    .control_group{
+        width: 33%;
+        /* margin-left: 50%;
+        transform: translateX(-50%); */
+    }
+}
+
+@media (max-width: 1000px){
+    body {
+        height: 100vh;
+    }
+
+    .header > h1 {
+        font-size: 80px;
+    }
+
+    .logo-img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .data_container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data_member {
+        width: 95%;
+    }
+
+    .data_member > h2 {
+        font-size: 65px;
+        margin: 0;
+    }
+
+    .data_member > p {
+        font-size: 55px;
+    }
+
+    button {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .control_sd.control_group{
+        width: 68%;
+    }
+
+    .control-icon {
+        font-size: 50px;
+    }
+}
