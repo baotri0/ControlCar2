@@ -277,12 +277,12 @@ button:hover{
     }
 
     .data_member > h2 {
-        font-size: 65px;
+        font-size: 5rem;
         margin: 0;
     }
 
     .data_member > p {
-        font-size: 45px;
+        font-size: 3rem;
     }
 
     button {
