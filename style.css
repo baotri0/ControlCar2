@@ -205,7 +205,10 @@ button:hover{
     }
     
     .data_member > p {
-        font-size: 20px;
+        margin: 0;
+        font-size: 25px;
+        align-items: center;
+        display: flex;
     }
 
     .control_group{
